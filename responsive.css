@@ -1,0 +1,257 @@
+/* Адаптив Логотипа*/
+/* большие экраны */
+.logo {
+    max-width: 520px;
+}
+
+/* ноутбуки */
+@media (max-width: 1400px) {
+    .logo {
+        max-width: 420px;
+    }
+}
+
+/* планшеты */
+@media (max-width: 900px) {
+    .logo {
+        max-width: 320px;
+    }
+}
+
+/* телефоны */
+@media (max-width: 500px) {
+    .logo {
+        max-width: 240px;
+    }
+}
+
+/* адаптив неона*/
+
+@media (max-width: 500px) {
+    .logo.glow {
+        filter:
+            drop-shadow(0 0 4px #7a00ff)
+            drop-shadow(0 0 8px #5a00ff);
+    }
+}
+
+
+/* Адаптив изображения */
+@media (max-height: 800px) {
+    body {
+        background-image: url(img/Chernoff_автомийка_фон_1920х1500.jpg);
+    }
+}
+
+
+
+/* Адаптив кнопок Детейлинг Автомойка и Омывайка*/
+/* Планшеты */
+@media (max-width: 1200px) {
+    .navbar a {
+        font-size: 22px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 16px;
+        padding: 3px 6px;
+    }
+}
+
+/* Адаптив Отвечает за кнопки автобомиль джип и т.д */
+
+/* Планшеты и маленькие ноуты */
+@media (max-width: 1200px) {
+    .btn-class {
+        width: 220px;
+        font-size: 14px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .btn-class {
+        width: 45%; /* две кнопки в ряд */
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+
+/*Адаптив услуг*/
+
+/* ноутбуки */
+@media (max-width: 1400px){
+    .services-content{
+        transform: translateX(-7%);
+        max-width: 800px;
+    }
+}
+
+/* маленькие ноуты */
+@media (max-width: 1200px){
+    .services-content{
+        transform: translateX(-4%);
+        max-width: 90%;
+    }
+}
+
+/* планшеты */
+@media (max-width: 900px){
+    .services-content{
+        transform: none;
+        max-width: 100%;
+    }
+}
+
+/* Адаптив цены которая идет по правой стороне*/
+@media (min-width: 1600px) {
+
+    .service-price {
+        /* можно добавить padding или margin-right для ещё большего отрыва */
+        margin-left: auto;
+        padding-right: 220px; /* или больше по вкусу */
+    }
+}
+
+/* Большие экраны — прижимаем цену к правому краю */
+@media (min-width: 1400px) {
+    .service-price {
+        margin-left: auto;   /* прижимаем к правому краю строки */
+        padding-right: 40px; /* небольшой отступ от края окна */
+    }
+    
+    .services-content {
+        max-width: 1200px;  /* расширяем контейнер, чтобы было место */
+        transform: none;    /* убираем сдвиг влево */
+    }
+}
+
+
+/*Другой адаптив*/
+@media (max-width: 768px) {
+    .services-content {
+        transform: none !important;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-content {
+        transform: none !important;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .service-row {
+        width: 100%;
+    }
+
+    .service-price {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .clasi {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-class {
+        width: 48%;
+        font-size: 13px;
+    }
+}
+
+
+/* ===== Адаптив для Детейлинга ===== */
+
+/* ноутбуки */
+@media (max-width: 1400px){
+    .services-detailing{
+        transform: translateX(-7%);
+        max-width: 800px;
+    }
+}
+
+/* маленькие ноуты */
+@media (max-width: 1200px){
+    .services-detailing{
+        transform: translateX(-4%);
+        max-width: 90%;
+    }
+}
+
+/* планшеты */
+@media (max-width: 900px){
+    .services-detailing{
+        transform: none;
+        max-width: 100%;
+    }
+}
+
+/* Адаптив цены которая идет по правой стороне — большие экраны */
+@media (min-width: 1600px){
+    .services-detailing .service-price {
+        margin-left: auto;
+        padding-right: 220px; /* можно подвинуть под вкус */
+    }
+}
+
+/* Большие экраны — прижимаем цену к правому краю */
+@media (min-width: 1400px){
+    .services-detailing .service-price {
+        margin-left: auto;
+        padding-right: 40px;
+    }
+
+    .services-detailing{
+        max-width: 1200px;
+        transform: none;
+    }
+}
+
+/* Адаптив под мобильные */
+@media (max-width: 768px){
+    .services-detailing{
+        transform: none !important;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .services-detailing .service-row{
+        width: 100%;
+    }
+
+    .services-detailing .service-price{
+        margin-left: auto;
+    }
+
+    /* если есть кнопки */
+    .clasi{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-class{
+        width: 48%;
+        font-size: 13px;
+    }
+}
+
