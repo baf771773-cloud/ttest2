@@ -166,6 +166,12 @@ body{
     object-fit: cover; /* растягиваем, сохраняя пропорции */
     z-index: -1; /* чтобы картинка была позади контента */
 }
+
+.bg-img {
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+
             /*CSS по логотипу*/
 .logo-wrap {
     position: relative;
